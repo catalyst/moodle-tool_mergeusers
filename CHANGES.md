@@ -1,6 +1,10 @@
 Release notes
 =============
 
+2025040300
+
+1. 2025-04-03 User profile fields created in recent versions of this plugin are no longer used, however, will not be deleted automatically. The data is now pulled directly from the log in the database, and displayed via a profile hook on a users profile page.
+
 2025020505
 
 1. 2025-02-05 - bump version to make a new plugin version available for M4.5.

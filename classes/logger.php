@@ -22,6 +22,12 @@
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+namespace tool_mergeusers;
+
+use Exception;
+use moodle_url;
+use stdClass;
+
 require_once __DIR__ . '/../../../../config.php';
 
 global $CFG;
@@ -32,7 +38,7 @@ require_once $CFG->dirroot .'/lib/clilib.php';
  * Class to manage logging actions for this tool.
  * General log table cannot be used for log.info field length restrictions.
  */
-class tool_mergeusers_logger {
+class logger {
 
     /**
      * Adds a merging action log into tool log.
